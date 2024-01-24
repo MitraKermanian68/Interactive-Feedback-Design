@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Feedback Design</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/9bf81300c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="feedbackbox">
+        <div class="emoji">
+          <div id="imoji">
+            <img src="./images/sademoji.png" draggable="false" />
+            <img src="./images/sub-buzz.webp" draggable="false" />
+            <img src="./images/Rolling_Eyes.webp" draggable="false" />
+            <img src="./images/crossemoji.png" draggable="false" />
+            <img src="./images/happyemoji.webp" draggable="false" />
+            <img src="./images/loveemoji.webp" draggable="false" />
+          </div>
+        </div>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var stars = document.getElementsByClassName("fa-solid");
+      var imoji = document.getElementById("imoji");
+
+      stars[0].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#e4e4e4";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        stars[5].style.color = "#e4e4e4";
+        imoji.style.transform = "translateX(0)";
+      };
+      stars[1].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        stars[5].style.color = "#e4e4e4";
+        imoji.style.transform = "translateX(-100px)";
+      };
+      stars[2].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        stars[5].style.color = "#e4e4e4";
+        imoji.style.transform = "translateX(-200px)";
+      };
+      stars[3].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#e4e4e4";
+        stars[5].style.color = "#e4e4e4";
+        imoji.style.transform = "translateX(-300px)";
+      };
+      stars[4].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#ffd93b";
+        stars[5].style.color = "#e4e4e4";
+        imoji.style.transform = "translateX(-400px)";
+      };
+      stars[5].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#ffd93b";
+        stars[5].style.color = "#ffd93b";
+        imoji.style.transform = "translateX(-500px)";
+      };
+    </script>
+  </body>
+</html>
